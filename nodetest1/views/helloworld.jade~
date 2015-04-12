@@ -49,7 +49,7 @@ html
       .right
         .actions
           a.button.back.alt2(href='/') Notifications
-          a.button.alt.download.on(href='Login', data-name='striped', data-title='Striped') Login
+          a.button.alt.download.on(href='newuser', data-name='striped', data-title='Striped') Login
     // Wrapper
     #wrapper
       // Content

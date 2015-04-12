@@ -5,7 +5,7 @@ var util = require('util');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+  res.render('Home', { title: 'Express' });
 });
 
 /* GET Hello World page. */
@@ -24,13 +24,68 @@ router.get('/userlist', function(req, res) {
     });
 });
 
+router.get('/Deltoids', function(req, res) {
+    res.render('Deltoids', {title: 'Login'});
+});
+
+router.get('/Traps', function(req, res) {
+    res.render('Traps', {title: 'Login'});
+});
+
+router.get('/LowerChest', function(req, res) {
+    res.render('LowerChest', {title: 'Login'});
+});
+
+router.get('/UpperChest', function(req, res) {
+    res.render('UpperChest', {title: 'Login'});
+});
+
+router.get('/LowerBack', function(req, res) {
+    res.render('LowerBack', {title: 'Login'});
+});
+
+router.get('/UperBack', function(req, res) {
+    res.render('UpperBack', {title: 'Login'});
+});
+
+router.get('/Biceps', function(req, res) {
+    res.render('Biceps', {title: 'Login'});
+});
+
+router.get('/Triceps', function(req, res) {
+    res.render('Triceps', {title: 'Login'});
+});
+
+router.get('/LowerAbs', function(req, res) {
+    res.render('LowerAbs', {title: 'Login'});
+});
+router.get('/UpperAbs', function(req, res) {
+    res.render('UpperAbs', {title: 'Login'});
+});
+
+router.get('/Quads', function(req, res) {
+    res.render('Quads', {title: 'Login'});
+});
+
+router.get('/Hamstrings', function(req, res) {
+    res.render('Hamstrings', {title: 'Login'});
+});
+
+router.get('/Calves', function(req, res) {
+    res.render('Calves', {title: 'Login'});
+});
+
+router.get('/Login', function(req, res) {
+    res.render('Login', {title: 'Login'});
+});
+
 /* GET New User page. */
 router.get('/newuser', function(req, res) {
     res.render('newuser', { title: 'Add New User' });
 });
 
 /* POST to Add User Service */
-router.post('/newuser', function(req, res) {
+router.post('/Login', function(req, res) {
 
     // Set our internal DB variable
     var db = req.db;
