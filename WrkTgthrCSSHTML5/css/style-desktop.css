@@ -1,0 +1,372 @@
+/*
+	Striped by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+*/
+
+/*********************************************************************************/
+/* Basic                                                                         */
+/*********************************************************************************/
+
+	body
+	{
+		height: 100%;
+	}
+	
+	body,input,textarea,select
+	{
+		line-height: 1.75em;
+	}
+
+	h2
+	{
+		font-size: 1.2em;
+	}
+
+	h3, h4, h5, h6
+	{
+		font-size: 1em;
+	}
+
+	/* Button */
+
+		input[type="button"],
+		input[type="submit"],
+		input[type="reset"],
+		.button
+		{
+			display: inline-block;
+			padding: 0.5em 2em 0.5em 2em;
+		}
+		
+			input[type="button"].small,
+			input[type="submit"].small,
+			input[type="reset"].small,
+			.button.small
+			{
+				font-size: 0.85em;
+				padding: 0.35em 1.5em 0.35em 1.5em;
+			}
+		
+			input[type="button"].big,
+			input[type="submit"].big,
+			input[type="reset"].big,
+			.button.big
+			{
+				font-size: 1.25em;
+				padding: 0.75em 2em 0.75em 2em;
+			}
+		
+			input[type="button"].huge,
+			input[type="submit"].huge,
+			input[type="reset"].huge,
+			.button.huge
+			{
+				font-size: 1.5em;
+				padding: 0.75em 2em 0.75em 2em;
+			}
+
+	/* Pagination */
+
+		.pagination
+		{
+			padding: 3em 0 0 0;
+		}
+
+			.pagination .pages
+			{
+			}
+
+			.pagination .previous
+			{
+				margin-right: 0.6em;
+			}
+
+			.pagination .next
+			{
+				margin-left: 0.2em;
+			}
+
+			.pagination .pages a
+			{
+				width: 2.75em;
+				height: 2.75em;
+				line-height: 2.75em;
+			}
+			
+			.pagination .button
+			{
+				height: 2.75em;
+				padding-top: 0;
+				padding-bottom: 0;
+				line-height: 2.75em;
+			}
+
+	/* Box */
+
+		.box
+		{
+		}
+
+			.box.post
+			{
+			}
+
+				.box.post .info
+				{
+				}
+
+					.box.post .info .stats
+					{
+					}
+					
+						.box.post .info .stats li a
+						{
+						
+						}
+
+							.box.post .info .stats li:hover a
+							{
+							
+							}
+		
+/*********************************************************************************/
+/* Logo                                                                          */
+/*********************************************************************************/
+
+	#logo
+	{
+		font-family: 'Open Sans Condensed', sans-serif;
+		font-weight: 700;
+		font-size: 2em;
+		letter-spacing: 0.1em;
+	}
+	
+		#logo a
+		{
+			margin-top: 20px;
+			display: block;
+			background-color: #c94663;
+			background-image: url('images/bg01.png');
+			padding: 0.875em 0.25em;
+			border-radius: 0.2em;
+			text-align: center;
+			box-shadow: inset 0px 0px 0px 1px rgba(255,255,255,0.15), 0 0.025em 0.15em 0em rgba(0,0,0,0.25);
+			text-decoration: none;
+			color: #fff;
+		}
+
+/*********************************************************************************/
+/* Content                                                                       */
+/*********************************************************************************/
+		
+	#content
+	{
+		box-shadow: 0 0 0.25em 0em rgba(0,0,0,0.25);
+	}
+
+		#content > .inner
+		{
+			/*
+				This sets an upper limit on your page content to prevent it
+				from looking insane on really wide displays. It's currently set
+				to the width of the sample post images, but you can change it to
+				whatever you like (or remove it entirely).
+			*/
+			max-width: 1038px;
+			padding-bottom: 2em;
+		}
+
+/*********************************************************************************/
+/* Sidebar                                                                       */
+/*********************************************************************************/
+		
+	#sidebar
+	{
+		position: absolute;
+		top: 0;
+		padding: 3em 1.35em 1em 1.15em;
+		width: 14em; /* = whatever you want */
+		background: #6F3636 url('images/bg01.png');
+		box-shadow: inset -0.1em 0em 0.35em 0em rgba(0,0,0,0.15);
+	}
+
+		body.left-sidebar #sidebar
+		{
+			left: 0;
+		}
+	
+		body.right-sidebar #sidebar
+		{
+			right: 0;
+		}
+
+/*********************************************************************************/
+/* Copyright                                                                     */
+/*********************************************************************************/
+
+	#copyright
+	{
+		margin: 2em 0 0 0;
+		text-align: center;
+	}
+
+		#copyright p
+		{
+			font-size: 0.8em;
+			line-height: 2em;
+		}
+	
+		#copyright:before
+		{
+			height: 0.5em;
+			margin: 0 0 2em 0;
+		}
+		/*********************************************************************************/
+/*  h                                                                          */
+/*********************************************************************************/
+
+	body#demo {
+		background: #fafbfd;
+	}
+
+	#demo-iframe-wrapper {
+		position: fixed;
+		background: #dee0e3;
+		top: 3.375em;
+		left: 0;
+		width: 100%;
+		height: calc(100% - 3.375em);
+		opacity: 1.0;
+		border-radius: 10px;
+		transition: all 0.5s ease-in-out;
+	}
+	
+		body.overlap #demo-iframe-wrapper {
+			top: 0;
+			height: 100%;
+		}
+
+		#demo-iframe-wrapper iframe {
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			transition: all 0.5s ease-in-out;
+			overflow-x: hidden;
+		}
+
+		#demo-iframe-wrapper.loading {
+		}
+
+			#demo-iframe-wrapper.loading iframe {
+				opacity: 0;
+			}
+		
+		#demo-iframe-wrapper.framed {
+			box-shadow: 0 0 0 29px #fff, 0 0 0 30px #dee0e3;
+		}
+
+			#demo-iframe-wrapper.framed iframe {
+				box-shadow: 0 0 0 1px #dee0e3;
+			}
+
+	#demo-header {
+		position: fixed;
+		left: 0;
+		top: 0;
+		width: 100%;
+		background: #fff;
+		background: rgba(111,54,54,0.90);
+		z-index: 10000;
+		box-shadow: 0 0 1px 0 rgba(16,16,32,0.25), 0 0 2px 0 rgba(0,0,0,0.15);
+		height: 3.75em;
+		transition: top 0.25s ease-in-out;
+		font-size: 0.9em;
+		z-index: 10000;
+		cursor: default;
+	}
+
+		#demo-header .button.alt2 {
+			outline: 0;
+		}
+
+		#demo-header .left {
+			position: absolute;
+			top: 0.5em;
+			left: 0.5em;
+			white-space: nowrap;
+			overflow: hidden;
+		}
+		
+			#demo-header .left .selector {
+				float: left;
+			} 
+		
+			#demo-header .left .actions {
+				float: left;
+				margin-left: 0.5em;
+			}
+		
+		#demo-header .right {
+			position: absolute;
+			top: 0.5em;
+			right: 0.5em;
+			white-space: nowrap;
+			overflow: hidden;
+		}
+
+			#demo-header .right .actions {
+				float: left;
+				margin-left: 0.5em;
+			}
+			
+				#demo-header .right .actions a {
+					margin-left: 0.5em;
+				}
+				
+		#demo-header h1 {
+			letter-spacing: -0.5px;
+			font-weight: 600;
+			float: left;
+			height: 2.75em;
+			line-height: 2.75em;
+			margin: 0 1.25em 0 0.5em;
+			display: inline-block;
+		}
+		
+			#demo-header h1 span {
+				font-size: 1.25em;
+			}
+
+		#demo-header .share {
+			float: left;
+		}
+		
+		body.dark #demo-header {
+			background: #272d39;
+			background: rgba(55,61,73,0.975);
+			color: #fff;
+			box-shadow: none;
+		}
+		
+			body.dark #demo-header .selector li,
+			body.dark #demo-header .share,
+			body.dark #demo-header .button.alt2 {
+				border-color: #575d69;
+			}
+			
+				body.dark #demo-header .button.alt2:hover {
+					border-color: #e7746f;
+				}
+
+				body.dark #demo-header .selector li:hover {
+					background: #474d59;
+				}
+
+				body.dark #demo-header .selector li.active {
+					border-color: #676d79;
+					background: #676d79;
+				}
+				
