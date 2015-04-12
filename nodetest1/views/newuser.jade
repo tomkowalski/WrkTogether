@@ -1,0 +1,18 @@
+extends layout
+
+block content
+    h1= title
+    form#formAddUser(name="adduser",method="post",action="/adduser")
+        input#inputUserName(type="text", placeholder="username", name="username")
+        input#inputUserEmail(type="text", placeholder="useremail", name="useremail")
+        input#inputUserPassword(type="text", placeholder="password", name="password")
+
+        button#btnSubmit(type="submit") submit
+
+block content
+    form(action="/upload", method="post", enctype="multipart/form-data")
+        input(type="text", name="title")
+        input(type="file", multiple, name="image")
+        button(type="submit", value="Upload") Upload File
+
+

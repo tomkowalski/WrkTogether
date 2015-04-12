@@ -55,25 +55,23 @@ html
       br
       br
       br
-      form#formAddUser(name="addUser",method="post",action="/addUser")
+      form#formPostContent(name="postContent",method="post",action="/postContent")
         center
-         input#inputUserName(type="text", placeholder="first name", name="firstName", style='font-size:16px')
+        input#input(type="titlePost", placeholder="title", name="title", style='font-size:16px')
         center
-        input#inputUserName(type="text", placeholder="last name", name="lastName", style='font-size:16px')
+        textarea(name="textPost", placeholder= "Description", cols=5, rows=5)
         center
-        input#inputUserEmail(type="text", placeholder="email", name="email", style='font-size:16px')
-        center
-        input#inputUserEmail(type="text", placeholder="confirm email", name="confEmail", style='font-size:16px')
-        center
-        input#inputUserPassword(type="text", placeholder="password", name="password", style='font-size:16px')
-        center
-        input#inputUserPassword(type="text", placeholder="Confirm Password", name="confPass", style='font-size:16px')
+        select(name="bodyPart")
+            option(value='Deltoid') Deltoid
+            |   
+            option(value='Traps') Traps
+            |   
+            option(value='LowerChest') LowerChest
+            |   
+            option(value='UpperChest') UpperChest
         center
         button#btnSubmit(type="submit") submit
-      br
-      | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-      center
-        // </p>
+      // </p>
     // Sidebar
     #sidebar
       // Logo
